@@ -1,0 +1,15 @@
+{
+  "Desktop": {
+    "Version": "1.3.0",
+    "Url": "https://github.com/teslaoruz/mizan-releases/releases/download/1.3.0/Mizan-1.3.0-app-windows.zip",
+    "Sha256": "4be30593a75c0291387b0d5584c1e8a2c783da32049559d5875002548262219d",
+    "Size": 99815062
+  },
+  "Phone": {
+    "Version": "1.3.0",
+    "Url": "https://github.com/teslaoruz/mizan-releases/releases/download/1.3.0/MizanPhone.apk",
+    "Sha256": "d5e16c4457912cec0f23bf7d0d4388ec1df9507a966447c09383afad58899e33",
+    "Size": 27542848
+  },
+  "Notes": null
+}
