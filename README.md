@@ -1,51 +1,37 @@
-# Mizan — update channel
+# Mizan
 
-This repository carries **application payloads and a signed manifest**. It holds no source code;
-Mizan's source lives in a separate, private repository.
+Mizan is accounting software for shops: a Windows desktop app with an Android companion app.
 
-## What is here
+## Download
+
+Get the newest version from the [Releases page](https://github.com/teslaoruz/mizan-releases/releases/latest).
 
 | File | What it is |
 |---|---|
-| `latest.json` | the current release: version, download URL and SHA-256 for each app |
-| `latest.json.sig` | an ECDSA signature over `latest.json`, made with the vendor key |
-| Release assets | `Mizan-<version>-app-windows.zip` (the desktop app) and `MizanPhone.apk` |
+| `Mizan-Setup-<version>.exe` | Windows installer, for a new installation |
+| `Mizan-<version>-app-windows.zip` | Desktop update, used by Mizan's built-in updater |
+| `MizanPhone.apk` | Android app |
 
-**The Windows installer is deliberately not here.** A shop is set up once, in person, by an agent
-from a USB stick. This channel exists to keep an install current afterwards, not to re-run a setup
-wizard at somebody who has already been through it.
+## Install on Windows
 
-## How a shop uses it
+1. Download `Mizan-Setup-<version>.exe`.
+2. Right-click the file, choose **Properties**, tick **Unblock**, then click **OK**.
+3. Run the installer. If Windows shows "Windows protected your PC", click **More info**, then **Run anyway**.
+4. Enter your licence when the installer asks for it.
 
-Settings → Updates → *Check for updates*. It is manual and opt-in: Mizan is built to work with no
-internet at all, and a shop without it never sees an error about this.
+The Android app is installed from the **Phone** window in Mizan on the PC.
 
-## Why the signature matters
+## Updates
 
-Mizan will not act on anything here that it cannot verify:
+In Mizan, open **Settings → Updates → Check for updates**. Every update is signed, and Mizan
+verifies each download before installing it.
 
-1. `latest.json.sig` must verify against the **vendor's public key**, which is compiled into every
-   copy of Mizan — the same key that signs licences. A manifest signed by anything else is
-   discarded without being read.
-2. The downloaded file's SHA-256 must match the hash inside that signed manifest, or the file is
-   deleted and nothing is installed.
+## Check a download
 
-So publishing here cannot make a shop run arbitrary code: whoever controls this repository, this
-account, or the network in between still cannot produce a manifest that verifies. The private
-signing key is offline and has never been on a server.
-
-## Downloading these files does not get you Mizan
-
-The apps are licence-gated. Each install is activated with a signed, machine-bound token issued by
-the vendor; without one, a copy downloaded from here does nothing useful. The payloads are public
-because an update channel has to be reachable, not because the product is.
-
-## Publishing (vendor only)
+Each installer has a matching `.sha256` file. On Windows:
 
 ```
-./build-release.sh all          # builds, signs the manifest, refuses unless the version is a git tag
+certutil -hashfile Mizan-Setup-<version>.exe SHA256
 ```
 
-Then upload `latest.json`, `latest.json.sig` and the two payloads as a release named for the
-version. Upload the manifest **byte for byte** — the signature covers those exact bytes, so
-reformatting it breaks every shop's update check.
+The result should match the value in the `.sha256` file.
