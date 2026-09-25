@@ -1,15 +1,15 @@
 {
   "Desktop": {
-    "Version": "1.4.0",
-    "Url": "https://github.com/teslaoruz/mizan-releases/releases/download/1.4.0/Mizan-1.4.0-app-windows.zip",
-    "Sha256": "fbe54d09f9d5c08e7125f60e7635a0d46d7d97b8e02be598f285b36072ab9628",
-    "Size": 100031715
+    "Version": "1.4.1",
+    "Url": "https://github.com/teslaoruz/mizan-releases/releases/download/1.4.1/Mizan-1.4.1-app-windows.zip",
+    "Sha256": "b5adc637780e107bf80a46a71ed9abad636519d0390b1bdb866f4141fe46d310",
+    "Size": 100084482
   },
   "Phone": {
-    "Version": "1.4.0",
-    "Url": "https://github.com/teslaoruz/mizan-releases/releases/download/1.4.0/MizanPhone.apk",
-    "Sha256": "5daaa1bd48b103de42bbf0ab0ba8c6681c2ba8b728811495c90733296de3f170",
-    "Size": 27616576
+    "Version": "1.4.1",
+    "Url": "https://github.com/teslaoruz/mizan-releases/releases/download/1.4.1/MizanPhone.apk",
+    "Sha256": "d039be873477f85b80b22663778c837ddd1c8e210731a7ae8afb92f9b602b6a1",
+    "Size": 27653440
   },
   "Notes": null
 }
