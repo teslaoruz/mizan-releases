@@ -1,31 +1,18 @@
 {
   "Desktop": {
-    "Version": "1.4.8",
-    "Url": "https://github.com/teslaoruz/mizan-releases/releases/download/1.4.8/Mizan-1.4.8-app-windows.zip",
-    "Sha256": "73260f4502a5f104103e8198fccd3d93a61fb7282448514b9e45a4ea24e6bd7a",
-    "Size": 103120168,
+    "Version": "1.5.0",
+    "Url": "https://github.com/teslaoruz/mizan-releases/releases/download/1.5.0/Mizan-1.5.0-app-windows.zip",
+    "Sha256": "e9b3f2f056a56892154a6001621fa76425fa9d951323923ed802cae9c9f068f1",
+    "Size": 99170654,
     "Product": "mizan",
-    "ReleaseDate": "2026-11-07",
+    "ReleaseDate": "2026-11-19",
     "MinLicenseSchema": 4,
     "RequiredFeatures": null,
     "Requires": "Windows 10 (1809) or later, 64-bit; self-contained, no .NET install needed",
-    "DbSchema": 8,
-    "Migration": "The books are upgraded to version 8 on first start; older Mizan cannot open them afterwards.",
+    "DbSchema": 9,
+    "Migration": "The books are upgraded to version 9 on first start; older Mizan cannot open them afterwards.",
     "MinimumVersion": null
   },
-  "Phone": {
-    "Version": "1.4.8",
-    "Url": "https://github.com/teslaoruz/mizan-releases/releases/download/1.4.8/MizanPhone.apk",
-    "Sha256": "e43e04f8de97fc356da47b3f5800b0bb8fd511c22292e55a862f7ee737d580b8",
-    "Size": 27788608,
-    "Product": "mizan",
-    "ReleaseDate": "2026-11-07",
-    "MinLicenseSchema": 0,
-    "RequiredFeatures": null,
-    "Requires": "Android 7 or later",
-    "DbSchema": 0,
-    "Migration": null,
-    "MinimumVersion": null
-  },
+  "Phone": null,
   "Notes": null
 }
