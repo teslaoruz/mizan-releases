@@ -1,11 +1,11 @@
 {
   "Desktop": {
-    "Version": "1.5.0",
-    "Url": "https://github.com/teslaoruz/mizan-releases/releases/download/1.5.0/Mizan-1.5.0-app-windows.zip",
-    "Sha256": "e9b3f2f056a56892154a6001621fa76425fa9d951323923ed802cae9c9f068f1",
-    "Size": 99170654,
+    "Version": "1.5.01",
+    "Url": "https://github.com/teslaoruz/mizan-releases/releases/download/1.5.01/Mizan-1.5.01-app-windows.zip",
+    "Sha256": "6e2fe3b1c580231a1208ecc3384cd86c36dc83d8cd3849731c96f1c4418253a8",
+    "Size": 99183082,
     "Product": "mizan",
-    "ReleaseDate": "2026-11-19",
+    "ReleaseDate": "2026-11-25",
     "MinLicenseSchema": 4,
     "RequiredFeatures": null,
     "Requires": "Windows 10 (1809) or later, 64-bit; self-contained, no .NET install needed",
