@@ -1,9 +1,9 @@
 {
   "Desktop": {
-    "Version": "1.5.01",
-    "Url": "https://github.com/teslaoruz/mizan-releases/releases/download/1.5.01/Mizan-1.5.01-app-windows.zip",
-    "Sha256": "6e2fe3b1c580231a1208ecc3384cd86c36dc83d8cd3849731c96f1c4418253a8",
-    "Size": 99183082,
+    "Version": "1.5.1",
+    "Url": "https://github.com/teslaoruz/mizan-releases/releases/download/1.5.1/Mizan-1.5.1-app-windows.zip",
+    "Sha256": "0117496e50039b0821b0c3abd7be7b3b4c7e65dff9c833e0f30e8589d0122ab0",
+    "Size": 99183317,
     "Product": "mizan",
     "ReleaseDate": "2026-11-25",
     "MinLicenseSchema": 4,
